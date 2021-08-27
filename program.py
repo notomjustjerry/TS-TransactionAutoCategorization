@@ -24,6 +24,8 @@ def labelCategory(row):
         if keyword in row.RawDescription:
             if label == "":
                 return category
+            elif label == category:
+                return category
             else:
                 return (label + "|" + category)
 
